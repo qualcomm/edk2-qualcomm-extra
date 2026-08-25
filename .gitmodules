@@ -1,0 +1,3 @@
+[submodule "DtFrameworkPkg/DTFramework"]
+	path = DtFrameworkPkg/DTFramework
+	url = https://github.com/qualcomm/dtframework
