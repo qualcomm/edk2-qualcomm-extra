@@ -1,35 +1,23 @@
-**After repository creation:**
-- [ ] Update this `README.md`. Update the Project Name, description, and all sections. Remove this checklist.
-- [ ] **Specify your license.** This template does NOT ship with a default license. Identify your project's approved license per your organization's license approval guidelines. 
-- [ ] **Create `LICENSE.txt`.** Replace the placeholder text in `LICENSE.txt` with the full text of your project's approved license.
-- [ ] **Update the License section** below to name your approved license and link to it.
-- [ ] Search this repo for "REPLACE-ME" and update all instances accordingly
-- [ ] Update `CONTRIBUTING.md` as needed
-- [ ] Review the workflows in `.github/workflows`, updating as needed. See https://docs.github.com/en/actions for information on what these files do and how they work.
-- [ ] Review and update the suggested Issue and PR templates as needed in `.github/ISSUE_TEMPLATE` and `.github/PULL_REQUEST_TEMPLATE`
-- [ ] Remove this checklist
 
-# Project Name
 
-*\<update with your project name and a short description\>*
+# edk2-qualcomm-glue
 
-Project that does ... implemented in ... runs on Qualcomm® *\<processor\>*
+Hosts dependencies and supporting components required for building and maintaining Qualcomm platforms within edk2-platforms.
+
 
 ## Branches
 
 **main**: Primary development branch. Contributors should develop submissions based on this branch, and submit pull requests to this branch.
 
 ## Requirements
-
-List requirements to run the project, how to install them, instructions to use docker container, etc...
+This is not used stand alone.
 
 ## Installation Instructions
 
-How to install the software itself.
-
+Not applicable.
 ## Usage
 
-Describe how to use the project.
+Built as part of edk2-platforms/Platform/Qualcomm.
 
 ## Development
 
@@ -41,10 +29,11 @@ How to contact maintainers. E.g. GitHub Issues, GitHub Discussions could be indi
 
 * [Report an Issue on GitHub](../../issues)
 * [Open a Discussion on GitHub](../../discussions)
-* [E-mail us](mailto:REPLACE-ME@qti.qualcomm.com) for general questions
+
 
 ## License
 
-*\<update with your project name and license\>*
+Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+SPDX-License-Identifier: BSD-2-Clause-Patent
 
-*\<REPLACE-ME\>* is licensed under the [REPLACE-ME with license name](https://spdx.org/licenses/REPLACE-ME-with-correct-URL-to-SPDX-license). See [LICENSE.txt](LICENSE.txt) for the full license text.
+*edk2-qualcomm-glue* is licensed under the [ BSD-2-Clause-Patent](https://spdx.org/licenses/BSD-2-Clause-Patent.html). See [LICENSE.txt](LICENSE.txt) for the full license text.
