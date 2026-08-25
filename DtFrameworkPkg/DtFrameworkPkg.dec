@@ -1,0 +1,22 @@
+## @file
+#
+# DTFramework package declaration file.
+#
+# Exposes the include path of the DTFramework submodule so that consumers
+# do not need a private -I compiler flag to reach its headers.
+#
+# Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.<BR>
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+[Defines]
+  DEC_SPECIFICATION              = 1.27
+  PACKAGE_NAME                   = DtFrameworkPkg
+  PACKAGE_GUID                   = 0D2DA28E-30E2-44B4-99F3-49A356F0C34A
+  PACKAGE_VERSION                = 0.1
+
+[Includes.common]
+  DTFramework/inc
+  DTFramework/libs/libfdt
+  Include
