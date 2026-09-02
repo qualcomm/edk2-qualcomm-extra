@@ -1,6 +1,6 @@
 
 
-# edk2-qualcomm-glue
+# edk2-qualcomm-extra
 
 Hosts dependencies and supporting components required for building and maintaining Qualcomm platforms within edk2-platforms.
 
@@ -36,4 +36,4 @@ How to contact maintainers. E.g. GitHub Issues, GitHub Discussions could be indi
 Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
 SPDX-License-Identifier: BSD-2-Clause-Patent
 
-*edk2-qualcomm-glue* is licensed under the [ BSD-2-Clause-Patent](https://spdx.org/licenses/BSD-2-Clause-Patent.html). See [LICENSE.txt](LICENSE.txt) for the full license text.
+*edk2-qualcomm-extra* is licensed under the [ BSD-2-Clause-Patent](https://spdx.org/licenses/BSD-2-Clause-Patent.html). See [LICENSE.txt](LICENSE.txt) for the full license text.
