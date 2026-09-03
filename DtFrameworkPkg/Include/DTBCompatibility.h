@@ -14,12 +14,18 @@
 #define DTBCOMPATIBILITY_H_
 
 /*
- * DTBExtnLib.h and create-dtb-apis.h declare their fdt_* API prototypes
- * using the lowercase fdt_node_handle spelling directly. This alias lets
- * those declarations resolve to the same canonical struct without
- * duplicating it.
+ * DTBExtnLib_*.c and DTBInternals.h access these members directly as
+ * node->blob and node->offset throughout, so the struct is defined here
+ * with the lowercase spelling DTBExtnLib.h's fdt_* prototypes expect,
+ * rather than aliased from edk2-platforms's PascalCase FDT_NODE_HANDLE
+ * (DTBDefs.h). The two types must stay layout-identical - BaseDtFrameworkLib.c
+ * has a STATIC_ASSERT enforcing that and casts pointers between them at
+ * each fdt_* call site.
  */
-typedef FDT_NODE_HANDLE fdt_node_handle;
+typedef struct {
+  CONST VOID  *blob;
+  INT32       offset;
+} fdt_node_handle;
 
 /*
  * Referenced directly by DTBExtnLib_blob.c, DTBExtnLib_node.c, and
