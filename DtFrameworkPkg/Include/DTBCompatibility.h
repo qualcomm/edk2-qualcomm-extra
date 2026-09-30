@@ -14,20 +14,6 @@
 #define DTBCOMPATIBILITY_H_
 
 /*
- * DTBExtnLib_*.c and DTBInternals.h access these members directly as
- * node->blob and node->offset throughout, so the struct is defined here
- * with the lowercase spelling DTBExtnLib.h's fdt_* prototypes expect,
- * rather than aliased from edk2-platforms's PascalCase FDT_NODE_HANDLE
- * (DTBDefs.h). The two types must stay layout-identical - BaseDtFrameworkLib.c
- * has a STATIC_ASSERT enforcing that and casts pointers between them at
- * each fdt_* call site.
- */
-typedef struct {
-  CONST VOID  *blob;
-  INT32       offset;
-} fdt_node_handle;
-
-/*
  * Referenced directly by DTBExtnLib_blob.c, DTBExtnLib_node.c, and
  * DTBInternals.h.
  */
